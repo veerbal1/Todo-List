@@ -1,4 +1,5 @@
 import React from "react";
+import CheckBox from "./CheckBox";
 
 const styles = {
   glassEffect: {
@@ -10,9 +11,12 @@ const styles = {
 function TodoListItem({ value }) {
   return (
     <div
-      className="text-sm font-extralight flex justify-start items-center px-2 py-1 select-none cursor-pointer my-1"
+      className="text-sm font-extralight flex justify-start items-center px-2 py-1 select-none cursor-pointer my-1 rounded-sm"
       style={styles.glassEffect}
     >
+      <span className="pr-2">
+        <CheckBox />
+      </span>
       {value}
     </div>
   );

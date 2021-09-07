@@ -2,11 +2,12 @@ import React from "react";
 import ListWrapper from "./ListWrapper";
 import TodoListItem from "./TodoListItem";
 
-function ActiveList() {
+function ActiveList({ items }) {
   return (
     <ListWrapper title="Active">
-      <TodoListItem value="Learning React"/>
-      <TodoListItem value="Learning Next"/>
+      {items.map((item) => (
+        <TodoListItem key={item.id} value={item.task} />
+      ))}
     </ListWrapper>
   );
 }
