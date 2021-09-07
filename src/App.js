@@ -1,5 +1,6 @@
 import "./App.css";
 import logo from "./assets/bg.jpg";
+import WorkflowBox from "./Components/WorkflowBox";
 
 const styles = {
   main: {
@@ -16,15 +17,11 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
   },
-  workflowBox: {
-    background: "rgba(255,255,255,0.2)",
-    backdropFilter: "saturate(180%) blur(10px)",
-  },
 };
 function App() {
   return (
     <div style={styles.main}>
-      <div className="w-8/12 h-4/6 rounded-md" style={styles.workflowBox}></div>
+      <WorkflowBox />
     </div>
   );
 }
