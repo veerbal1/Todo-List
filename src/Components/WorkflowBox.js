@@ -1,4 +1,5 @@
 import React from "react";
+import AddButton from "./AddButton";
 import Title from "./Typography/Title";
 
 const styles = {
@@ -11,10 +12,13 @@ const styles = {
 function WorkflowBox() {
   return (
     <div
-      className="w-8/12 h-4/6 rounded-md grid p-3"
+      className="w-8/12 h-4/6 rounded-md p-3"
       style={styles.workflowBox}
     >
-      <Title title="Todo List" className="text-xl" />
+      <div className="flex items-center">
+        <Title title="Todo List" className="text-xl" />
+        <AddButton/>
+      </div>
     </div>
   );
 }
