@@ -3,7 +3,7 @@ import React from "react";
 function ActiveSignal({ status = null }) {
   return (
     <div
-      className={`w-2 h-2 ${
+      className={`select-none w-2 h-2 ${
         status == null
           ? "bg-transparent"
           : status === "active"

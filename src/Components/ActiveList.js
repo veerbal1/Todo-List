@@ -1,12 +1,10 @@
 import React from "react";
-import SubTitle from "./Typography/SubTitle";
+import ListWrapper from "./ListWrapper";
 
 function ActiveList() {
-  return (
-    <div className="flex">
-      <SubTitle text="Active" status="active"/>
-    </div>
-  );
+  return <ListWrapper title="Active">
+    <p>to do</p>
+  </ListWrapper>;
 }
 
 export default ActiveList;
