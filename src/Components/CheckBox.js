@@ -17,8 +17,15 @@ const styles = {
   },
 };
 
-function CheckBox() {
-  return <input type="checkbox" className="pr-2"/>;
+function CheckBox({ checked }) {
+  return (
+    <input
+      type="checkbox"
+      className="pr-2"
+      checked={checked}
+      onChange={() => {}}
+    />
+  );
 }
 
 export default CheckBox;

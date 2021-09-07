@@ -6,7 +6,7 @@ function ActiveList({ items }) {
   return (
     <ListWrapper title="Active">
       {items.map((item) => (
-        <TodoListItem key={item.id} value={item.task} />
+        <TodoListItem key={item.id} value={item.task} completed={item.completed}/>
       ))}
     </ListWrapper>
   );

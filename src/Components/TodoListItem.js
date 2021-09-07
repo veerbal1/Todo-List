@@ -8,14 +8,14 @@ const styles = {
   },
 };
 
-function TodoListItem({ value }) {
+function TodoListItem({ value, completed }) {
   return (
     <div
-      className="text-sm font-extralight flex justify-start items-center px-2 py-1 select-none cursor-pointer my-1 rounded-sm"
+      className={`text-sm font-extralight flex justify-start items-center px-2 py-1 select-none cursor-pointer my-1 rounded-sm ${completed && "disabled:opacity-50 line-through"}`}
       style={styles.glassEffect}
     >
       <span className="pr-2">
-        <CheckBox />
+        <CheckBox checked={completed} />
       </span>
       {value}
     </div>

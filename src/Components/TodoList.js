@@ -11,7 +11,7 @@ const todoList = [
   {
     id: "1",
     task: "Learn Reactjs. It is avery good framework to build complex UIs",
-    completed: false,
+    completed: true,
   },
   {
     id: "2",
