@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "./Typography/Title";
 
 const styles = {
   workflowBox: {
@@ -9,7 +10,12 @@ const styles = {
 
 function WorkflowBox() {
   return (
-    <div className="w-8/12 h-4/6 rounded-md" style={styles.workflowBox}></div>
+    <div
+      className="w-8/12 h-4/6 rounded-md grid p-3"
+      style={styles.workflowBox}
+    >
+      <Title title="Todo List" className="text-xl" />
+    </div>
   );
 }
 
