@@ -1,7 +1,7 @@
 import React from "react";
 import SubTitle from "./Typography/SubTitle";
 
-function ListWrapper({ title = "", status, children }) {
+function ListWrapper({ title = "", status, children,addNew }) {
   return (
     <div className="flex flex-col">
       <SubTitle

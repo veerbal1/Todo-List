@@ -1,34 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import { getAll, list } from "../Services/toDoList";
 import ActiveList from "./ActiveList";
 
 const styles = {
-  listParentWrapper:{
-    maxWidth:"40%"
-  }
-}
+  listParentWrapper: {
+    maxWidth: "40%",
+  },
+};
 
-const todoList = [
-  {
-    id: "1",
-    task: "Learn Reactjs. It is avery good framework to build complex UIs",
-    completed: true,
-  },
-  {
-    id: "2",
-    task: "Learn Nextjs",
-    completed: false,
-  },
-  {
-    id: "3",
-    task: "Learn Javascript",
-    completed: false,
-  },
-];
-
-function TodoList() {
+function TodoList({items,addNew}) {
   return (
     <div className="ml-4" style={styles.listParentWrapper}>
-      <ActiveList items={todoList}/>
+      <ActiveList items={items} addNew={addNew}/>
     </div>
   );
 }
